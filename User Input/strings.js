@@ -1,6 +1,5 @@
 // Global variables.
 var updateMessage = document.getElementById("message");
-//var topMessage = document.getElementById("top-msg");
 var greyMsg = document.getElementById("greyMsg");
 var greyMessage = "";
 
