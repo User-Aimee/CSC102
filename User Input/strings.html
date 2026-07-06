@@ -1,0 +1,50 @@
+<!-- Aimee Gates -->
+<!-- Note: I hardly edited this because account deletion pages aren't really known for being pretty, and that's the theme I wanted.
+ The only creative elements I have are a red button, a grey paragraph, and hidden elements -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Title of my application -->
+    <title>Fakebook Account Deletion</title>
+<!-- Style only used for hiding zip code form-->
+    <style>
+        #zipHidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<!-- Added ID's to be able to hide/alter it later -->
+<h2 id="heading">Account Deletion</h2>
+<p id="top-msg">WARNING: Deleting your account will remove all of your information from our database. This cannot be undone.</p>
+<!-- Added inline style -->
+<p id="greyMsg" style="color: rgba(0, 0, 0, 0.555)">Type your first and last name.</p>
+
+<!-- First visible form for name inputs -->
+<form id="nameHidden" onSubmit="validate(); return false;">
+    <label for="firstName">First name:</label><br>
+    <input type="text" id="firstName" name="firstName"><br>
+    <label for="lastName">Last name:</label><br>
+    <input type="text" id="lastName" name="lastName"><br><br>
+    <button type="submit">Continue</button><br><br>
+</form> 
+
+<!-- Second (currently invisible) form for zip code input-->
+<form id="zipHidden" onSubmit="zip(); return false;">
+    <label for="zipCode">Zip Code:</label><br>
+    <input type="text" id="zipCode" name="zipCode"><br><br>
+<!-- Added inline style here too because it'd be simpler for me -->
+    <button type="submit" style="color:white ; background-color: darkred ; border: none; border-radius: 2px; padding: 5px">Delete</button>
+</form>
+
+<!-- Message that will show errors or a conirmation -->
+<p id="message"></p>
+
+</body>
+</html>
+<script src="strings.js"></script>
+</body>
+</html>
