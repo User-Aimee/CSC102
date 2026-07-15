@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+        <head>
+            <title>Blackjack</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <h1>BLACKJACK</h1>
+
+            <!--All changing text-->
+            <h2 id="headerMessage">Click "Start Game" when you're ready!</h2>
+            
+        <div class="cardBox">
+            <p id="yourCards">Your Cards: </p>
+            <p id="yourPoints">Your Points: </p>
+            <p id="dealerCards">Dealers Cards: </p>
+            <p id="dealerPoints">Dealers Points: </p>
+        </div>
+
+        <!--Buttons wrapped in the form element-->
+        <form onSubmit="startGame(); return false;">
+            <button type="submit">Start Game</button>
+        </form>
+
+        <form onSubmit="drawCard(); return false;">
+            <button type="submit">Draw Card</button>
+        </form>
+
+        <form onSubmit="stand(); return false;">
+            <button type="submit">Stand</button>
+        </form>
+        
+        <div class="rulesSpace">
+            <p><strong>Rules:</strong></p>
+            <p>To win, you need to draw cards that get you closer to 21 than the dealer, without going over.</p>
+        </div>
+
+            <script src="code.js"></script>
+
+        </body>
+</html>

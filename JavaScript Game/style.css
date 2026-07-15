@@ -1,0 +1,71 @@
+
+
+body {
+    font-family: "Monaco", "Courier New", monospace;
+    background-color: white;
+    background-image: url(starry.png);
+    background-size: cover;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    color: #d4af37;
+    margin-top: 140px;
+    
+}
+
+/* Game text results styling section */
+#headerMessage {
+    font-style: italic;
+    color: rgb(255 138 255);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(128 0 128);
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(212,175,55);
+    width: 150px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+button p {
+    color: rgb(255 138 255);
+}
+
+/* Rules styling section */
+.rulesSpace {
+    margin-top: 135px;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: rgb(212,175,55, 0.7);
+    background: rgb(0,0,0, 0.7);
+}
+
+.rulesSpace p {
+    color: rgb(128 0 128);
+}
+
+/* Game display styling section*/
+.cardBox {
+    color: rgb(255 138 255);
+    border: 1px solid;
+    border-color: #d4af37;
+    border-radius: 5px;
+    background: rgb(0,0,0, 0.7);
+    max-width: 400px;
+    padding: 10px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+}
