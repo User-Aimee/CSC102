@@ -1,0 +1,27 @@
+<!--Aimee Gates-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="strings.css">
+</head>
+<body>
+    <h2>Palindrome Checker</h2>
+    <p>Type a word or sentence to see if it's the same backwards and forwards!</p>
+
+<form id="string" onSubmit="check(); return false;">
+    <label for="txt">Your input:</label><br>
+    <input type="text" id="txt" name="txt"><br>
+    <button type="submit">Check</button><br><br>
+</form> 
+
+    <!--Message that shows error-->
+    <p id="message"></p>
+
+    <Script src="strings.js"></Script>
+</body>
+</html>
