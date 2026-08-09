@@ -1,0 +1,86 @@
+/* Styles the myVideo ID, universal selector, body, container class, title class, thematic break, 
+timer class, button wrapper class, button class, the hover pseudo-class in the button class, audio and songTitle ID 
+*/
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body{
+    min-height: 100vh;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 2em;
+    padding: 4em 6em;
+}
+
+.title{
+    font-size: 3em;
+}
+
+hr{
+    width: 100%;
+    background-color: white;
+    height: 5px;
+    border-radius: 1em;
+    border-radius: none;
+}
+
+.timer{
+    font-size: 10em;
+    font-weight: 700;
+}
+
+.button-wrapper{
+    display: flex;
+    gap: 1em;
+}
+
+.button{
+    font-size: 2em;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 0.5em 1.5em;
+    border-radius: 0.5em;
+    border: solid;
+    border-color: rgba(161, 68, 254, 0.80);
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.60);
+}
+
+.button:hover{
+    transform: translateY(-10px);
+}
+
+audio {
+    margin-top: 20px;
+}
+
+#songTitle {
+  font-family: Arial, Helvetica, sans-serif;
+}
