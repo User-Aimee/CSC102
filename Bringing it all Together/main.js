@@ -26,7 +26,7 @@ function updateTimer() {
 stop or reset button is pressed first.
 */
 function startTimer() {
-    start.disabled = true;
+    //start.disabled = true;
     interval = setInterval(function() {
         timeLeft--;
         updateTimer();

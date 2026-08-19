@@ -6,8 +6,9 @@
 body {
   font-family: VBookman, URW Bookman L, serif;
   margin: 0;
-  background: #0A001B;
+  background-color: #0A001B;
   background: linear-gradient(50deg, rgba(10, 0, 27, 1) 19%, rgba(24, 11, 61, 1) 68%, rgba(31, 6, 79, 1) 96%);
+  min-height: 100vh;
 }
 
 /*Logo Design*/
@@ -75,11 +76,44 @@ div.gallery-item div.desc {
   }
 }
 
+/*About page*/
+.container {
+  width: min(92%, 1200px);
+  margin: 0 auto;
+  margin-top: 200px;
+}
+
+.about {
+  border-top: 2px solid #777;
+  border-bottom: 2px solid #777;
+}
+
+.gap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+}
+
+.images {
+  height: 250px;
+  width: 80%;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.images-resume {
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
 /*Footer*/
 footer {
     background-color: black;
     color: white;
     text-align: center;
     padding: 20px;
-    margin-top: 40px;
+    margin-top: 200px;
 }

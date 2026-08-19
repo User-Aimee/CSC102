@@ -1,0 +1,392 @@
+/*I tried to create reusable rules. Theres a rule for different colors 
+to try to avoid inline code. I also created rules for images, navbars, footers, 
+hero images, logo, buttons, :hover, contact form, text, etc.*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #242a5a;
+  background-color: white;
+  line-height: 1.6;
+}
+
+.light-color {
+  color: #f5f2ec;
+}
+
+.dark-color {
+  color: #242a5a;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.navbar {
+  min-height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.container {
+  width: min(92%, 1200px);
+  margin: 0 auto;
+}
+
+.header {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #e5e2dc;
+  z-index: 100;
+}
+
+a {
+  color: #242a5a;
+  text-decoration: none;
+}
+p {
+  color: #242a5a;
+}
+
+.logo {
+  font-weight: 900;
+  letter-spacing: -1px;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.logo span {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 4px;
+  color: #886d4d;
+  margin-top: -4px;
+}
+
+.top-navbar {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.top-navbar a:hover{
+  color: #886d4d;
+}
+
+.button {
+  color: white;
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #242a5a;
+  border-radius: 2px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.nav-button {
+  color: white;
+  background-color: #242a5a;
+  border-radius: 2px;
+  display: inline-block;
+  padding: 12px 20px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.hero-image {
+  position: relative;
+  height: 680px;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(400deg, rgba(0,0,0,.68), rgba(0,0,0,.08) 80%);
+  color: white;
+}
+
+.hero-overlay .container {
+  padding-top: 60px;
+}
+
+.hero-overlay h1 {
+  max-width: 750px;
+  line-height: .95;
+  letter-spacing: -4px;
+  font-size: clamp(48px, 7vw, 88px);
+  margin: 12px 0 24px;
+}
+
+.hero-text {
+  max-width: 560px;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.button-brown-color {
+  background-color: #886d4d;
+}
+
+.highlight {
+  color: #886d4d;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.highlight.brown-color {
+  color: #886d4d;
+}
+
+h1 {
+  letter-spacing: -1.5px;
+  line-height: 1.05;
+}
+h2{
+  font-size: clamp(36px, 5vw, 58px);
+  margin: 10px 0 20px;
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+}
+
+h3 {
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+  margin: 12px 0;
+  font-size: 26px;
+}
+
+.section {
+  padding: 100px 0;
+  border-top: 1px solid #adafc4;
+}
+
+.section-light {
+  background-color: #f5f2ec;
+}
+
+.section-accent {
+  background-color: #adafc4;
+  color: white;
+}
+
+.second-container {
+  max-width: 700px;
+  margin-bottom: 45px;
+}
+
+.centered {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+}
+
+.about-image {
+  height: 430px;
+  object-fit: cover;
+}
+
+.text-link {
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: 800;
+  border-bottom: 2px solid #886d4d;
+  padding-bottom: 3px;
+}
+
+.selections {
+  display: grid;
+  gap: 20px;
+}
+
+.int-ex-selections {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.selection-design {
+  background-color: #adafc4;
+  padding: 45px;
+  height: 575px;
+  border: 1px solid #e2ded7;
+}
+
+
+ .services-image{
+  height: 300px;
+  object-fit: cover;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #242a5a;
+}
+.exterior-image {
+  height: 300px;
+  object-fit: cover;
+}
+
+
+.selection-design p {
+  max-width: 500px;
+}
+
+.showcase-area {
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  gap: 20px;
+}
+
+.project-box {
+  overflow: hiden;
+  background-color: white;
+}
+
+.project-box img {
+  height: 300px;
+  object-fit: cover;
+  transition: transform .3s ease;
+}
+
+.project-text {
+  padding: 18px;
+  display: block;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.showcase-city {
+  text-align: right;
+  color: #886d4d;
+  font-size: 13px;
+}
+
+.showcase-description {
+  text-align: left;
+  color: black;
+  font-size: 16px;
+  margin: 0;
+}
+
+.reviews-section {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.reviews {
+  padding: 30px;
+  border: 1px solid #383838;
+}
+
+.ratings {
+  color: #886d4d;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.reviews strong {
+  display: block;
+  margin-top: 20px;
+}
+
+.contact-section {
+  background: white;
+}
+
+.contact-end {
+  justify-self: end;
+}
+
+.button {
+  justify-self: end;
+}
+
+.footer {
+  background-color: #242a5a;
+  color: white;
+  padding: 65px 0 25px;
+}
+
+.footer-box {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  gap: 50px;
+}
+
+.footer-bottom {
+  display: flex;
+  border-top: 1px solid #3c3c3c;
+  margin-top: 50px;
+  padding-top: 20px;
+  justify-content: space-between;
+  color: #e5e2dc;
+  font-size: 13px;
+}
+
+.footer-box a {
+  color: #e5e2dc;
+  display: block;
+  margin-bottom: 7px;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.footer-box h4 {
+  margin-bottom: 15px;
+  color: #886d4d;
+}
+
+.footer-box a:hover {
+  color: #886d4d;
+}
+
+.footer p {
+  color: #e5e2dc;
+}
+
+.contact-form {
+  display: grid;
+  gap: 10px;
+}
+.contact-form input{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f6f2ef;
+  color: #242a5a;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #d7d3cb;
+}
+
+.contact-form textarea {
+  color: #242a5a;
+  background-color: #f6f2ef;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  border: 1px solid #d7d3cb;
+  padding: 15px;
+}
