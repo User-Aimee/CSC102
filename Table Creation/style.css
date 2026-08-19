@@ -1,0 +1,36 @@
+html, body {
+    min-height: 100%;
+}
+
+/*gradient background*/
+body { 
+    background: #DBE6F6;
+    background: linear-gradient(80deg, rgba(219, 230, 246, 1) 0%, rgba(197, 121, 109, 1) 100%);
+    background-repeat: no-repeat;
+    margin: 0;
+    min-height: 100vh;
+}
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(even){
+    background-color: rgba(242, 242, 242, 0.5);}
+
+tr:hover {
+    background-color: #ddd;}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgba(54, 48, 74, 0.85);
+  color: white;
+}
