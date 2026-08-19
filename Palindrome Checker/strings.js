@@ -28,5 +28,4 @@ function check() {
     //Keeping my useful console.logs moving forward to keep track of my thought process
     console.log(lowerString);
     console.log(newString);
-    console.log(updateMessage);
 }
